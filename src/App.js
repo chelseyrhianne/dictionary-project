@@ -13,7 +13,7 @@ export default function App() {
           alt="logo of a girl reading on a pile of books"
         />
         <main>
-          <Dictionary />
+          <Dictionary defaultKeyword="Hi" />
         </main>
         <footer className="App-footer">
           <a

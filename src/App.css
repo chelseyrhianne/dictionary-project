@@ -1,3 +1,19 @@
+body {
+  background: rgba(218, 242, 233, 0.2);
+  color: #07122b;
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  color: #ef457e;
+  text-decoration: none;
+  transition: all 200ms ease-in-out;
+}
+
+a:hover {
+  color: #fcbd4c;
+}
+
 .App-header {
   margin: 40px 0;
 }

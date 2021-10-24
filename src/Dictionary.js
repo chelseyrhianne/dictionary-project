@@ -18,10 +18,13 @@ export default function Dictionary(props) {
     setPhotos(response.data.photos);
   }
 
+  function handleError() {
+    alert("Sorry, we can't find this word in the dictionary! Try another?");
+  }
   function search() {
     // documentation: https://dictionaryapi.dev/
     let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
-    axios.get(apiUrl).then(handleDictionaryResponse);
+    axios.get(apiUrl).then(handleDictionaryResponse).catch(handleError);
 
     // documentation: https://www.pexels.com/api/documentation/#photos-search
     let pexelsApiKey =

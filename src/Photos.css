@@ -1,0 +1,9 @@
+.Photos img {
+  box-shadow: 6px 5px rgba(218, 242, 233, 1);
+  margin: 20px 0;
+  transition: all 400ms ease-in-out;
+}
+
+.Photos img:hover {
+  box-shadow: 6px 5px #fcbd4c;
+}

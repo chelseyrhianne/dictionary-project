@@ -5,11 +5,33 @@
   margin: 30px;
 }
 
-.Dictionary input {
+.Dictionary form {
+  display: flex;
   width: 100%;
+}
+.Dictionary .search {
+  width: 90%;
   border: 1px solid #ddd;
   padding: 8px;
-  font-size: 16px;
+  font-size: 14px;
+}
+
+.Dictionary .submit {
+  background-color: #fcbd4c;
+  color: white;
+  border: 1px solid #fcbd4c;
+  padding: 6px 20px;
+  box-shadow: 6px 5px rgba(218, 242, 233, 1);
+  transition: all 400ms ease-in-out;
+  font-size: 14px;
+  font-weight: 500;
+  margin-left: 20px;
+}
+
+.Dictionary .submit:hover {
+  background-color: #ef457e;
+  color: white;
+  border: 1px solid #ef457e;
 }
 
 .Dictionary h1 {

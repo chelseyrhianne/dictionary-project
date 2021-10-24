@@ -52,11 +52,13 @@ export default function Dictionary(props) {
         <section>
           <form onSubmit={handleSubmit}>
             <input
+              className="search"
               type="search"
               placeholder="search for a word"
               autoFocus={true}
               onChange={handleKeywordChange}
             />
+            <input className="submit" type="submit" value="go" />
           </form>
         </section>
         <Results results={results} />
